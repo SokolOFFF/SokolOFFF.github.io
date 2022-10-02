@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/title_icon.png">
+    <title>Yegor's page</title>
+    <link rel="stylesheet" href="http://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/stylesheet.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a class="logo" href="index.html">
+                yegor <span>sokolov</span>
+            </a>
+            <a class="header_links" href="projects.html">proj<span>ects</span></a>
+            <a class="header_links" href="contacts.html">cont<span>acts</span></a>
+        </nav>
+    </header>
+
+    <section style="height: 100px"></section>
+
+    <script scr="code/app.js">
+
+        const header = document.querySelector("header");
+
+        function stickyNavbar(){
+            header.classList.toggle("scrolled", window.pageYOffset > 0);
+        }
+        stickyNavbar();
+
+        window.addEventListener("scroll", stickyNavbar);
+    </script>
+    <section class="showcase-area">
+
+        <h2> Here are my projects (some of them can have private GitHub repo):</h2>
+        <br><br>
+
+        <div class="project">
+                <br>
+                <h3 class="project-name"><a  href="https://github.com/InnoSWP/B21-07FixMyEnglish"> Fix my English</a></h3>
+                <br>
+                <p class="project-description">Tool for detecting academic writing mistakes in English texts.</p>
+                <p class="project-description">Used Flutter for developing and Firebase for deploying.</p>
+                <p class="project-description">Made by Group BS21-07, Innopolis University.</p>
+                <br>
+                <p class="project-date">Created in June 2022</p>
+                <br>
+        </div>
+        <br>
+        <br>
+
+        <div class="project">
+                <br>
+                <h3 class="project-name"><a  href="https://github.com/SokolOFFF/portfolio-site"> Personal site</a></h3>
+                <br>
+                <p class="project-description">The same personal site, but created with Django framework.</p>
+                <br>
+                <p class="project-date">Created in September 2022</p>
+                <br>
+        </div>
+        <br>
+        <br>
+
+        <div class="project">
+                <br>
+                <h3 class="project-name"><a  href="https://github.com/SokolOFFF/linear-algebra-helper-bot"> Linear-algebra-helper bot</a></h3>
+                <br>
+                <p class="project-description">Linear-algebra-helper-bot is a Telegram bot which helps student to study Linear Algebra. Moreover, it contains vector and matrix calculators to save student's time.</p>
+                <br>
+                <p class="project-date">Created in September 2021, refactored in October 2022</p>
+                <br>
+        </div>
+        <br>
+        <br>
+
+        <div class="project">
+                <br>
+                <h3 class="project-name"><a  href="https://github.com/SokolOFFF/pikachu-bot"> Pikachu bot</a></h3>
+                <br>
+                <p class="project-description">Pikachu-bot is a Telegram bot which sends random cure pictures on chosen themes.</p>
+                <br>
+                <p class="project-date">Created in February 2022, refactored in October 2022</p>
+                <br>
+        </div>
+        <br>
+        <br>
+
+        <div class="project">
+                <br>
+                <h3 class="project-name"><a  href="https://github.com/SokolOFFF/metro-map-application"> Metro-map application</a></h3>
+                <br>
+                <p class="project-description">Basically, it copies the Yandex.Metro application, but on unexciting map. Used Tkinter Python module and Floyd–Warshall algorithm for developing.</p>
+                <br>
+                <p class="project-date">Created in January 2019, refactored in October 2022.</p>
+                <br>
+        </div>
+        <br>
+        <br>
+    </section>
+
+
+</body>
+</html>

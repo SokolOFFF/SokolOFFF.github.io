@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/title_icon.png">
+    <title>Yegor's page</title>
+    <link rel="stylesheet" href="http://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/stylesheet.css" type="text/css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a class="logo" href="index.html">
+                yegor <span>sokolov</span>
+            </a>
+            <a class="header_links" href="projects.html">proj<span>ects</span></a>
+            <a class="header_links" href="contacts.html">cont<span>acts</span></a>
+        </nav>
+    </header>
+
+    <section style="height: 100px"></section>
+
+    <script scr="code/app.js">
+
+        const header = document.querySelector("header");
+
+        function stickyNavbar(){
+            header.classList.toggle("scrolled", window.pageYOffset > 0);
+        }
+        stickyNavbar();
+
+        window.addEventListener("scroll", stickyNavbar);
+    </script>
+    <section class="showcase-area">
+
+    <br><br><br><br><br><br>
+    <h2> contacts!!</h2>
+    <div class="row">
+        <div class="column">
+            <a href="https://t.me/yeawouu"> <img class="contact-logo" src="../img/telegram.webp" alt="telegram" style="width: 100%"></a>
+        </div>
+        <div class="column">
+            <a href="https://github.com/SokolOFFF"> <img class="contact-logo" src="../img/github.png" alt="github" style="width: 100%"></a>
+        </div>
+        <div class="column">
+            <a href="https://vk.com/yeawou"> <img class="contact-logo" src="../img/vk.png" alt="vk" style="width: 100%"></a>
+        </div>
+    </div>
+
+    </section>
+
+
+</body>
+</html>
